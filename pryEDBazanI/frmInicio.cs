@@ -45,5 +45,15 @@ namespace pryEDBazanI
             frmColores COM = new frmColores();  
             COM.ShowDialog();
         }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
