@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
+ 
+
 //IO INput output, es decir, entrada o salida de datos, en este caso, de archivos de texto. Para poder usar esta clase, se debe importar el espacio de nombres System.IO.
 namespace pryEDBazanI
 {
@@ -37,6 +40,13 @@ namespace pryEDBazanI
         }
         public void Recorrer()
         {
+            string DatoLeido;
+            
+            StreamReader AD = new StreamReader(NomArchi);
+            DatoLeido = AD.ReadLine();
+            
+
+
         }
     }
 }
