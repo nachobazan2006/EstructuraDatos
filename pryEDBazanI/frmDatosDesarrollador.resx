@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblPersonalText.Text" xml:space="preserve">
+    <value>Me considero una persona en proceso de crecimiento, enfocada en construir disciplina, constancia y pensamiento logico tanto en lo tecnico como en lo personal. Fuera del estudio, el futbol y el entrenamiento fisico forman parte de mi equilibrio diario.</value>
+  </data>
+  <data name="lblTechText.Text" xml:space="preserve">
+    <value>Trabajo principalmente con C# y .NET, desarrollando aplicaciones con frontend y backend. Me interesa mejorar continuamente la estructura interna, la claridad del codigo y el diseno visual para que cada proyecto sea mas solido y entendible.</value>
+  </data>
+  <data name="lblVisionText.Text" xml:space="preserve">
+    <value>Soy Ignacio Gabriel Bazan, tengo 19 anios y actualmente estudio la carrera de Analista de Sistemas. Me interesa el desarrollo de software enfocado en crear soluciones practicas, funcionales y aplicables a problemas reales.</value>
+  </data>
 </root>

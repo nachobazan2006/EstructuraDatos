@@ -61,5 +61,32 @@ namespace pryEDBazanI
             frmAlumnos COM = new frmAlumnos();
             COM.ShowDialog();
         }
-    }
+
+        private void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstructuraDinamicaLineal COM = new frmEstructuraDinamicaLineal();
+            COM.ShowDialog();
+        }
+
+        private void sistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pOOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void díasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDias COM = new frmDias();    
+            COM.ShowDialog();
+        }
+    } 
 }
