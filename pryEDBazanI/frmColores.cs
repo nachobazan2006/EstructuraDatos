@@ -18,11 +18,19 @@ namespace pryEDBazanI
             InitializeComponent();
         }
 
+        private void CargarColores()
+        {
+            clsArchivoTexto AD = new clsArchivoTexto();
+            AD.NomArchi = "Colores.txt";
+            AD.Recorrer(lstColores);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtColor.Text == "")
             {
                 MessageBox.Show("Debe ingresar un color");
+                txtColor.Focus();
                 return;
             }
 
@@ -31,13 +39,14 @@ namespace pryEDBazanI
             AD.Grabar(txtColor.Text);
 
             MessageBox.Show("Color grabado correctamente");
-
-            
+            txtColor.Text = "";
+            txtColor.Focus();
+            CargarColores();
         }
 
         private void frmColores_Load(object sender, EventArgs e)
         {
-
+            CargarColores();
         }
     }
 }

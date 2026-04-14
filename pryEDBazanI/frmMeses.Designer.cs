@@ -59,6 +59,7 @@
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // btnGrabar
             // 
@@ -68,6 +69,7 @@
             this.btnGrabar.TabIndex = 3;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // lstMeses
             // 
@@ -90,6 +92,7 @@
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMeses";
+            this.Load += new System.EventHandler(this.frmMeses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

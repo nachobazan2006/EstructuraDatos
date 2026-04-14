@@ -42,18 +42,24 @@ namespace pryEDBazanI
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmColores COM = new frmColores();  
+            frmClientes COM = new frmClientes();  
             COM.ShowDialog();
         }
 
         private void frmInicio_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumnos COM = new frmAlumnos();
+            COM.ShowDialog();
         }
     }
 }

@@ -35,10 +35,10 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDeuda = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGrabar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,15 +106,6 @@
             this.dgvClientes.Size = new System.Drawing.Size(473, 150);
             this.dgvClientes.TabIndex = 6;
             // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Location = new System.Drawing.Point(366, 114);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(119, 23);
-            this.btnGrabar.TabIndex = 7;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            // 
             // colCodigo
             // 
             this.colCodigo.HeaderText = "Código";
@@ -129,6 +120,16 @@
             // 
             this.colDeuda.HeaderText = "Deuda";
             this.colDeuda.Name = "colDeuda";
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Location = new System.Drawing.Point(366, 114);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(119, 23);
+            this.btnGrabar.TabIndex = 7;
+            this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // frmClientes
             // 
@@ -146,6 +147,7 @@
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

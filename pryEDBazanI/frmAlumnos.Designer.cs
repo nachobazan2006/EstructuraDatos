@@ -1,6 +1,6 @@
 ﻿namespace pryEDBazanI
 {
-    partial class Alumnos
+    partial class frmAlumnos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Alumnos
+            // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 316);
-            this.Name = "Alumnos";
+            this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAlumnos";
             this.ResumeLayout(false);
