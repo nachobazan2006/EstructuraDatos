@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsNodo.cs" />
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,11 +91,23 @@
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListaDobleEnlazada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDobleEnlazada.Designer.cs">
+      <DependentUpon>frmListaDobleEnlazada.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMeses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSimple.Designer.cs">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDobleEnlazada.resx">
+      <DependentUpon>frmListaDobleEnlazada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
@@ -146,6 +163,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5168a22c77ae8cf15be2b367d1c133e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sss.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

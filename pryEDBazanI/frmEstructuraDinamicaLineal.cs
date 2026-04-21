@@ -61,10 +61,40 @@ namespace pryEDBazanI
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        clsCola fila = new clsCola();
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
+            clsNodo n = new clsNodo();
+            n.Codigo = Convert.ToInt32(txtCodigo.Text);
+            n.Nombre = txtNombre.Text;
+            n.Tramite = txtTramite.Text;
 
+            fila.Agregar(n);
+            fila.Recorrer(dgvCola);
+            fila.Recorrer(lstCola);
+
+            txtCodigo.Text = "";
+            txtTramite.Text = "";
+            txtNombre.Text = "";
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (fila.Primero != null)
+            {
+                lblCodigoEliminado.Text = fila.Primero.Codigo.ToString();
+                lblNombreEliminado.Text = fila.Primero.Nombre;
+                lblTramiteEliminado.Text = fila.Primero.Tramite;
+
+                fila.Eliminar();
+                fila.Recorrer(dgvCola);
+                fila.Recorrer(lstCola);
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos en la fila.");
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
