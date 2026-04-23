@@ -46,115 +46,125 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsArchivoTexto.cs" />
-    <Compile Include="clsCola.cs" />
-    <Compile Include="clsNodo.cs" />
-    <Compile Include="frmAlumnos.cs">
+    <Compile Include="Clases\clsArchivoTexto.cs" />
+    <Compile Include="Clases\clsCola.cs" />
+    <Compile Include="Clases\clsNodo.cs" />
+    <Compile Include="Clases\clsPila.cs" />
+    <Compile Include="Formularios\frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAlumnos.Designer.cs">
+    <Compile Include="Formularios\frmAlumnos.Designer.cs">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCiudades.cs">
+    <Compile Include="Formularios\frmCiudades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCiudades.Designer.cs">
+    <Compile Include="Formularios\frmCiudades.Designer.cs">
       <DependentUpon>frmCiudades.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmClientes.cs">
+    <Compile Include="Formularios\frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientes.Designer.cs">
+    <Compile Include="Formularios\frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmColores.cs">
+    <Compile Include="Formularios\frmColores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmColores.Designer.cs">
+    <Compile Include="Formularios\frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDatosDesarrollador.cs">
+    <Compile Include="Formularios\frmDatosDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDatosDesarrollador.Designer.cs">
+    <Compile Include="Formularios\frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDias.cs">
+    <Compile Include="Formularios\frmDias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDias.Designer.cs">
+    <Compile Include="Formularios\frmDias.Designer.cs">
       <DependentUpon>frmDias.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEstructuraDinamicaLineal.cs">
+    <Compile Include="Formularios\frmColaa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEstructuraDinamicaLineal.Designer.cs">
-      <DependentUpon>frmEstructuraDinamicaLineal.cs</DependentUpon>
+    <Compile Include="Formularios\frmColaa.Designer.cs">
+      <DependentUpon>frmColaa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInicio.cs">
+    <Compile Include="Formularios\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInicio.Designer.cs">
+    <Compile Include="Formularios\frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListaDobleEnlazada.cs">
+    <Compile Include="Formularios\frmListaDobleEnlazada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListaDobleEnlazada.Designer.cs">
+    <Compile Include="Formularios\frmListaDobleEnlazada.Designer.cs">
       <DependentUpon>frmListaDobleEnlazada.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMeses.cs">
+    <Compile Include="Formularios\frmMeses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMeses.Designer.cs">
+    <Compile Include="Formularios\frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProvincias.cs">
+    <Compile Include="Formularios\frmProvincias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProvincias.Designer.cs">
+    <Compile Include="Formularios\frmProvincias.Designer.cs">
       <DependentUpon>frmProvincias.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaSimple.cs">
+    <Compile Include="Formularios\ListaSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaSimple.Designer.cs">
+    <Compile Include="Formularios\ListaSimple.Designer.cs">
       <DependentUpon>ListaSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmPila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPila.Designer.cs">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAlumnos.resx">
+    <EmbeddedResource Include="Formularios\frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCiudades.resx">
+    <EmbeddedResource Include="Formularios\frmCiudades.resx">
       <DependentUpon>frmCiudades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClientes.resx">
+    <EmbeddedResource Include="Formularios\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmColores.resx">
+    <EmbeddedResource Include="Formularios\frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDatosDesarrollador.resx">
+    <EmbeddedResource Include="Formularios\frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDias.resx">
+    <EmbeddedResource Include="Formularios\frmDias.resx">
       <DependentUpon>frmDias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEstructuraDinamicaLineal.resx">
-      <DependentUpon>frmEstructuraDinamicaLineal.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmColaa.resx">
+      <DependentUpon>frmColaa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInicio.resx">
+    <EmbeddedResource Include="Formularios\frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListaDobleEnlazada.resx">
+    <EmbeddedResource Include="Formularios\frmListaDobleEnlazada.resx">
       <DependentUpon>frmListaDobleEnlazada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMeses.resx">
+    <EmbeddedResource Include="Formularios\frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProvincias.resx">
+    <EmbeddedResource Include="Formularios\frmProvincias.resx">
       <DependentUpon>frmProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPila.resx">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

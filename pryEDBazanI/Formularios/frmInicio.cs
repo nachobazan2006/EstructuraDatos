@@ -100,5 +100,11 @@ namespace pryEDBazanI
             frmProvincias COM = new frmProvincias();
             COM.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila COM = new frmPila();
+            COM.ShowDialog();
+        }
     } 
 }
