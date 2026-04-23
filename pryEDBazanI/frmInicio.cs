@@ -88,5 +88,11 @@ namespace pryEDBazanI
             frmDias COM = new frmDias();    
             COM.ShowDialog();
         }
+
+        private void ciudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCiudades COM = new frmCiudades();
+            COM.ShowDialog();
+        }
     } 
 }
