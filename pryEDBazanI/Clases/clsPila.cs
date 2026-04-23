@@ -33,9 +33,9 @@ namespace pryEDBazanI
         }
         public void Eliminar()
         {
-            if (primero == primero.Siguiente)
+            if (primero != null)
             {
-                primero = null;
+                primero = primero.Siguiente;
               
             }
             
