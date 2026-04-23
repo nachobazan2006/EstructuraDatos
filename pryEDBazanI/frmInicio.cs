@@ -94,5 +94,11 @@ namespace pryEDBazanI
             frmCiudades COM = new frmCiudades();
             COM.ShowDialog();
         }
+
+        private void provinciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProvincias COM = new frmProvincias();
+            COM.ShowDialog();
+        }
     } 
 }

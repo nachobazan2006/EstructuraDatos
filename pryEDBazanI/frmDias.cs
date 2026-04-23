@@ -16,6 +16,12 @@ namespace pryEDBazanI
         {
             InitializeComponent();
         }
+        public void CargarDias()
+        {
+            clsArchivoTexto AD = new clsArchivoTexto();
+            AD.NomArchi = "Dias.txt";
+            AD.Recorrer(lstDias);
+        }   
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -25,6 +31,25 @@ namespace pryEDBazanI
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtDia.Text == "")
+            {
+                MessageBox.Show("Debe ingresar un dia");
+                txtDia.Focus();
+                return;
+            }   
+        clsArchivoTexto AD = new clsArchivoTexto();
+        AD.NomArchi = "Dias.txt";
+        AD.Grabar(txtDia.Text);
+        CargarDias();
+        }
+
+        private void frmDias_Load(object sender, EventArgs e)
+        {
+            CargarDias();
         }
     }
 }
