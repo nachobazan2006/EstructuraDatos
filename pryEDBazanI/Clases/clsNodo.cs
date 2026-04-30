@@ -13,8 +13,8 @@ namespace pryEDBazanI
         private string nom;
         private string tra;
         private clsNodo sig;
-
         private clsNodo ant;
+
 
         //propiedades del nodo
         public Int32 Codigo 
