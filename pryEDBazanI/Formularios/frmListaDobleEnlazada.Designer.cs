@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtTramite = new System.Windows.Forms.TextBox();
+            this.txtNombree = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.lblTramite = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbElementoEliminado = new System.Windows.Forms.ComboBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.lblCodigo2 = new System.Windows.Forms.Label();
             this.dgvEnlazada = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lstEnlazada = new System.Windows.Forms.ListBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.Label();
-            this.lblTramite = new System.Windows.Forms.Label();
-            this.lblCodigo2 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.cmbElementoEliminado = new System.Windows.Forms.ComboBox();
-            this.rbAscendente = new System.Windows.Forms.RadioButton();
             this.rbDescendente = new System.Windows.Forms.RadioButton();
+            this.rbAscendente = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,9 +56,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtTramite);
+            this.groupBox2.Controls.Add(this.txtNombree);
+            this.groupBox2.Controls.Add(this.txtCodigo);
             this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Controls.Add(this.lblTramite);
             this.groupBox2.Controls.Add(this.txtNombre);
@@ -69,6 +69,64 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nuevo elemento";
+            // 
+            // txtTramite
+            // 
+            this.txtTramite.Location = new System.Drawing.Point(81, 132);
+            this.txtTramite.Name = "txtTramite";
+            this.txtTramite.Size = new System.Drawing.Size(100, 20);
+            this.txtTramite.TabIndex = 9;
+            // 
+            // txtNombree
+            // 
+            this.txtNombree.Location = new System.Drawing.Point(81, 86);
+            this.txtNombree.Name = "txtNombree";
+            this.txtNombree.Size = new System.Drawing.Size(100, 20);
+            this.txtNombree.TabIndex = 7;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(81, 36);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 5;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(6, 158);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(234, 33);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // lblTramite
+            // 
+            this.lblTramite.AutoSize = true;
+            this.lblTramite.Location = new System.Drawing.Point(27, 135);
+            this.lblTramite.Name = "lblTramite";
+            this.lblTramite.Size = new System.Drawing.Size(42, 13);
+            this.lblTramite.TabIndex = 3;
+            this.lblTramite.Text = "Trámite";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.AutoSize = true;
+            this.txtNombre.Location = new System.Drawing.Point(27, 89);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(44, 13);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Text = "Nombre";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(27, 39);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Código";
             // 
             // groupBox3
             // 
@@ -81,6 +139,33 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Elemento a eliminar";
+            // 
+            // cmbElementoEliminado
+            // 
+            this.cmbElementoEliminado.FormattingEnabled = true;
+            this.cmbElementoEliminado.Location = new System.Drawing.Point(69, 33);
+            this.cmbElementoEliminado.Name = "cmbElementoEliminado";
+            this.cmbElementoEliminado.Size = new System.Drawing.Size(171, 21);
+            this.cmbElementoEliminado.TabIndex = 8;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(6, 73);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(234, 33);
+            this.btnEliminar.TabIndex = 7;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // lblCodigo2
+            // 
+            this.lblCodigo2.AutoSize = true;
+            this.lblCodigo2.Location = new System.Drawing.Point(18, 36);
+            this.lblCodigo2.Name = "lblCodigo2";
+            this.lblCodigo2.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo2.TabIndex = 5;
+            this.lblCodigo2.Text = "Código";
             // 
             // dgvEnlazada
             // 
@@ -110,60 +195,6 @@
             this.lstEnlazada.Size = new System.Drawing.Size(240, 173);
             this.lstEnlazada.TabIndex = 0;
             // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(27, 39);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Código";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.AutoSize = true;
-            this.txtNombre.Location = new System.Drawing.Point(27, 89);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(44, 13);
-            this.txtNombre.TabIndex = 1;
-            this.txtNombre.Text = "Nombre";
-            // 
-            // lblTramite
-            // 
-            this.lblTramite.AutoSize = true;
-            this.lblTramite.Location = new System.Drawing.Point(27, 135);
-            this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(42, 13);
-            this.lblTramite.TabIndex = 3;
-            this.lblTramite.Text = "Trámite";
-            // 
-            // lblCodigo2
-            // 
-            this.lblCodigo2.AutoSize = true;
-            this.lblCodigo2.Location = new System.Drawing.Point(18, 36);
-            this.lblCodigo2.Name = "lblCodigo2";
-            this.lblCodigo2.Size = new System.Drawing.Size(40, 13);
-            this.lblCodigo2.TabIndex = 5;
-            this.lblCodigo2.Text = "Código";
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(6, 158);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(234, 33);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(6, 73);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(234, 33);
-            this.btnEliminar.TabIndex = 7;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.rbDescendente);
@@ -176,34 +207,16 @@
             this.groupBox5.Text = "Listar datos";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // textBox1
+            // rbDescendente
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(81, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(81, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
-            // 
-            // cmbElementoEliminado
-            // 
-            this.cmbElementoEliminado.FormattingEnabled = true;
-            this.cmbElementoEliminado.Location = new System.Drawing.Point(69, 33);
-            this.cmbElementoEliminado.Name = "cmbElementoEliminado";
-            this.cmbElementoEliminado.Size = new System.Drawing.Size(171, 21);
-            this.cmbElementoEliminado.TabIndex = 8;
+            this.rbDescendente.AutoSize = true;
+            this.rbDescendente.Location = new System.Drawing.Point(21, 53);
+            this.rbDescendente.Name = "rbDescendente";
+            this.rbDescendente.Size = new System.Drawing.Size(89, 17);
+            this.rbDescendente.TabIndex = 1;
+            this.rbDescendente.TabStop = true;
+            this.rbDescendente.Text = "Descendente";
+            this.rbDescendente.UseVisualStyleBackColor = true;
             // 
             // rbAscendente
             // 
@@ -215,17 +228,6 @@
             this.rbAscendente.TabStop = true;
             this.rbAscendente.Text = "Ascendente";
             this.rbAscendente.UseVisualStyleBackColor = true;
-            // 
-            // rbDescendente
-            // 
-            this.rbDescendente.AutoSize = true;
-            this.rbDescendente.Location = new System.Drawing.Point(21, 53);
-            this.rbDescendente.Name = "rbDescendente";
-            this.rbDescendente.Size = new System.Drawing.Size(89, 17);
-            this.rbDescendente.TabIndex = 1;
-            this.rbDescendente.TabStop = true;
-            this.rbDescendente.Text = "Descendente";
-            this.rbDescendente.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -268,9 +270,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgvEnlazada;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTramite;
+        private System.Windows.Forms.TextBox txtNombree;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label txtNombre;

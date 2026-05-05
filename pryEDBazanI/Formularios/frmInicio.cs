@@ -106,5 +106,11 @@ namespace pryEDBazanI
             frmPila COM = new frmPila();
             COM.ShowDialog();
         }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaDobleEnlazada COM = new frmListaDobleEnlazada();
+            COM.ShowDialog();
+        }
     } 
 }
