@@ -47,6 +47,7 @@ namespace pryEDBazanI
             {
                 fila.RecorrerDesc(dgvEnlazada);
                 fila.RecorrerDesc(lstEnlazada);
+                fila.RecorrerDesc(cmbElementoEliminado);
             }
             else
             {
@@ -62,14 +63,18 @@ namespace pryEDBazanI
         {
             if (fila.ultimo != null) 
             {
-                
-                    cmbElementoEliminado.Text = fila.ultimo.Codigo.ToString();
-                    
-
-                    fila.Eliminar();
+                if (cmbElementoEliminado.Text != "")
+                {
+                    fila.Eliminar(Convert.ToInt32(cmbElementoEliminado.Text));
                     fila.RecorrerDesc(dgvEnlazada);
                     fila.RecorrerDesc(lstEnlazada);
-               
+                    fila.RecorrerDesc(cmbElementoEliminado);
+                    cmbElementoEliminado.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un codigo para eliminar.");
+                }
             }
            
             else

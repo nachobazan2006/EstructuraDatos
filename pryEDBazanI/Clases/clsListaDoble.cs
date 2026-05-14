@@ -33,46 +33,82 @@ namespace pryEDBazanI.Clases
             }
             else
             {
-                clsNodo Aux = primero;
-                clsNodo Ant = ultimo;
-                ultimo = Nvo;
-                while (Aux.Codigo < Nvo.Codigo)
+                if (Nvo.Codigo <= primero.Codigo)
                 {
-                    Ant = Aux;
-                    Aux = Nvo;
+                    Nvo.Siguiente = primero;
+                    primero.Anterior = Nvo;
+                    primero = Nvo;
                 }
-                Ant.Siguiente = Nvo;
-                Nvo.Siguiente = Aux;
-                Aux = Nvo;
-                Nvo.Anterior = Ant; ;
+                else
+                {
+                    clsNodo Aux = primero;
+                    clsNodo Ant = primero;
+
+                    while (Aux != null && Nvo.Codigo > Aux.Codigo)
+                    {
+                        Ant = Aux;
+                        Aux = Aux.Siguiente;
+                    }
+
+                    Nvo.Siguiente = Aux;
+                    Nvo.Anterior = Ant;
+                    Ant.Siguiente = Nvo;
+
+                    if (Aux != null)
+                    {
+                        Aux.Anterior = Nvo;
+                    }
+                    else
+                    {
+                        ultimo = Nvo;
+                    }
+                }
             }
         }
         public void Eliminar(Int32 Codigo)
         {
+            if (primero == null)
+            {
+                return;
+            }
+
             if (primero == ultimo)
             {
-
+                if (primero.Codigo == Codigo)
+                {
+                    primero = null;
+                    ultimo = null;
+                }
             }
             else
             {
-                if (ultimo.Codigo == Codigo)
+                if (primero.Codigo == Codigo)
                 {
-                    ultimo = ultimo.Siguiente;
-                    ultimo.Siguiente = null;
-
+                    primero = primero.Siguiente;
+                    primero.Anterior = null;
                 }
                 else
                 {
-                    clsNodo aux = primero;
-                    clsNodo ant = primero;
-                    while (aux.Codigo < Codigo)
+                    if (ultimo.Codigo == Codigo)
                     {
-                        ant = aux;
-                        aux = aux.Siguiente;
+                        ultimo = ultimo.Anterior;
+                        ultimo.Siguiente = null;
                     }
-                    aux = aux.Siguiente;
-                    aux.Anterior = ant;
-                    ant.Siguiente = null;
+                    else
+                    {
+                        clsNodo aux = primero;
+
+                        while (aux != null && aux.Codigo != Codigo)
+                        {
+                            aux = aux.Siguiente;
+                        }
+
+                        if (aux != null)
+                        {
+                            aux.Anterior.Siguiente = aux.Siguiente;
+                            aux.Siguiente.Anterior = aux.Anterior;
+                        }
+                    }
                 }
             }
         }

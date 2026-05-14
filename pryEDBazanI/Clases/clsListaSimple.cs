@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryEDBazanI.Clases
 {
@@ -49,6 +50,11 @@ namespace pryEDBazanI.Clases
         }
         public void Eliminar(Int32 Codigo) 
         {
+            if (primero == null)
+            {
+                return;
+            }
+
             if (primero.Codigo == Codigo)
             {
                 primero = primero.Siguiente;
@@ -57,12 +63,57 @@ namespace pryEDBazanI.Clases
             {
                 clsNodo aux1 = primero;
                 clsNodo aux2 = primero;
-                while (aux1.Codigo != Codigo) 
+                while (aux1 != null && aux1.Codigo != Codigo) 
                 {
-                    aux2 = aux2;
+                    aux2 = aux1;
                     aux1 = aux1.Siguiente;
                 }
-                aux2.Siguiente = aux1.Siguiente;
+
+                if (aux1 != null)
+                {
+                    aux2.Siguiente = aux1.Siguiente;
+                }
+            }
+        }
+
+        public void Recorrer(ListBox Lista)
+        {
+            clsNodo aux = primero;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo);
+                aux = aux.Siguiente;
+            }
+        }
+
+        public void Recorrer(DataGridView Grilla)
+        {
+            clsNodo aux = primero;
+
+            if (Grilla.Columns.Count == 0)
+            {
+                Grilla.Columns.Add("Codigo", "Codigo");
+                Grilla.Columns.Add("Nombre", "Nombre");
+                Grilla.Columns.Add("Tramite", "Tramite");
+            }
+
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
+
+        public void Recorrer(ComboBox combo)
+        {
+            clsNodo aux = primero;
+            combo.Items.Clear();
+            while (aux != null)
+            {
+                combo.Items.Add(aux.Codigo);
+                aux = aux.Siguiente;
             }
         }
 
