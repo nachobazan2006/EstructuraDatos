@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pryEDBazanI.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -110,6 +111,30 @@ namespace pryEDBazanI
         private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListaDobleEnlazada COM = new frmListaDobleEnlazada();
+            COM.ShowDialog();
+        }
+
+        private void operacionesEnBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperaciones COM = new frmOperaciones();
+            COM.ShowDialog();
+        }
+
+        private void consultasVariasConOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultasConOperaciones COM = new frmConsultasConOperaciones();
+            COM.ShowDialog();
+        }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaTabla COM= new frmConsultaTabla();
+            COM.ShowDialog();
+        }
+
+        private void consultaDeUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSql COM = new frmConsultaSql();
             COM.ShowDialog();
         }
     } 

@@ -46,17 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\clsArbol.cs" />
     <Compile Include="Clases\clsArchivoTexto.cs" />
     <Compile Include="Clases\clsCola.cs" />
     <Compile Include="Clases\clsListaDoble.cs" />
     <Compile Include="Clases\clsListaSimple.cs" />
     <Compile Include="Clases\clsNodo.cs" />
     <Compile Include="Clases\clsPila.cs" />
+    <Compile Include="Formularios\frmConsultasConOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultasConOperaciones.Designer.cs">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaTabla.Designer.cs">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmAlumnos.Designer.cs">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmArbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmArbol.Designer.cs">
+      <DependentUpon>frmArbol.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmCiudades.cs">
       <SubType>Form</SubType>
@@ -112,6 +131,12 @@
     <Compile Include="Formularios\frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmOperaciones.Designer.cs">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmProvincias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,8 +157,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmConsultasConOperaciones.resx">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaTabla.resx">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmArbol.resx">
+      <DependentUpon>frmArbol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCiudades.resx">
       <DependentUpon>frmCiudades.cs</DependentUpon>
@@ -161,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmOperaciones.resx">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmProvincias.resx">
       <DependentUpon>frmProvincias.cs</DependentUpon>

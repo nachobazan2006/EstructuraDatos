@@ -200,32 +200,32 @@
             // colaToolStripMenuItem
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
-            this.colaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.colaToolStripMenuItem.Text = "Cola...";
             this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
             // 
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.pilaToolStripMenuItem.Text = "Pila...";
             this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(142, 6);
             // 
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.listaSimpleToolStripMenuItem.Text = "Lista simple...";
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.listaDobleToolStripMenuItem.Text = "Lista doble...";
             this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
@@ -268,6 +268,7 @@
             this.consultaDeUnaTablaToolStripMenuItem.Name = "consultaDeUnaTablaToolStripMenuItem";
             this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
             this.consultaDeUnaTablaToolStripMenuItem.Text = "Consulta de una tabla...";
+            this.consultaDeUnaTablaToolStripMenuItem.Click += new System.EventHandler(this.consultaDeUnaTablaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -279,12 +280,14 @@
             this.consultaDeBaseDeDatosToolStripMenuItem.Name = "consultaDeBaseDeDatosToolStripMenuItem";
             this.consultaDeBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
             this.consultaDeBaseDeDatosToolStripMenuItem.Text = "Consulta de base de datos...";
+            this.consultaDeBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.consultaDeBaseDeDatosToolStripMenuItem_Click);
             // 
             // operacionesEnBaseDeDatosToolStripMenuItem
             // 
             this.operacionesEnBaseDeDatosToolStripMenuItem.Name = "operacionesEnBaseDeDatosToolStripMenuItem";
             this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
             this.operacionesEnBaseDeDatosToolStripMenuItem.Text = "Operaciones en base de datos...";
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.operacionesEnBaseDeDatosToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -296,6 +299,7 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Name = "consultasVariasConOperacionesToolStripMenuItem";
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con operaciones...";
+            this.consultasVariasConOperacionesToolStripMenuItem.Click += new System.EventHandler(this.consultasVariasConOperacionesToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
