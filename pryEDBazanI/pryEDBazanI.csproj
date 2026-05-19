@@ -59,6 +59,12 @@
     <Compile Include="Formularios\frmConsultasConOperaciones.Designer.cs">
       <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmConsultaSKL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaSKL.Designer.cs">
+      <DependentUpon>frmConsultaSKL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmConsultaTabla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\frmConsultasConOperaciones.resx">
       <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaSKL.resx">
+      <DependentUpon>frmConsultaSKL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConsultaTabla.resx">
       <DependentUpon>frmConsultaTabla.cs</DependentUpon>

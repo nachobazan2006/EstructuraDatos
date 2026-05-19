@@ -134,8 +134,8 @@ namespace pryEDBazanI
 
         private void consultaDeUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsultaSql COM = new frmConsultaSql();
-            COM.ShowDialog();
+            frmConsultaSKL COM = new frmConsultaSKL();
+            COM.ShowDialog;
         }
     } 
 }
