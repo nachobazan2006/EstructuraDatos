@@ -119,6 +119,12 @@
     <Compile Include="Formularios\frmColaa.Designer.cs">
       <DependentUpon>frmColaa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmGrafoMatricial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGrafoMatricial.Designer.cs">
+      <DependentUpon>frmGrafoMatricial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     <EmbeddedResource Include="Formularios\frmColaa.resx">
       <DependentUpon>frmColaa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGrafoMatricial.resx">
+      <DependentUpon>frmGrafoMatricial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +251,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5168a22c77ae8cf15be2b367d1c133e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafo_matricial.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sss.png" />
