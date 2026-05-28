@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Clases\clsArbol.cs" />
     <Compile Include="Clases\clsArchivoTexto.cs" />
+    <Compile Include="Clases\clsBaseDatos.cs" />
     <Compile Include="Clases\clsCola.cs" />
     <Compile Include="Clases\clsListaDoble.cs" />
     <Compile Include="Clases\clsListaSimple.cs" />
