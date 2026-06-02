@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pryEDBazanI.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace pryEDBazanI.Formularios
         public frmConsultaSKL()
         {
             InitializeComponent();
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+
+        {
+            clsBaseDatos objBaseDatos = new clsBaseDatos();
+            objBaseDatos.Listar(dgvConsulta, txtConsulta.Text);
+
+        }
+        private void dgvConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

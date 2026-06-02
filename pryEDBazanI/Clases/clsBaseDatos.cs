@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace pryEDBazanI.Clases
 {
-     class clsBaseDatos
+    class clsBaseDatos
     {
-        private OleDbConnection conexion= new OleDbConnection();
-        private OleDbCommand comando= new OleDbCommand();
+        private OleDbConnection conexion = new OleDbConnection();
+        private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
 
         private string CadenaDeConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= Libreria.mdb";
@@ -22,19 +22,19 @@ namespace pryEDBazanI.Clases
         {
             try
             {
-                conexion.ConnectionString = CadenaDeConexion;   
+                conexion.ConnectionString = CadenaDeConexion;
                 conexion.Open();
 
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
                 comando.CommandText = tabla;
-                
+
                 DataSet ds = new DataSet();
                 adaptador = new OleDbDataAdapter(comando);
                 adaptador.Fill(ds, tabla);
 
                 Grilla.DataSource = null;
-                Grilla.DataSource =ds.Tables[tabla];
+                Grilla.DataSource = ds.Tables[tabla];
 
                 conexion.Close();
 
@@ -42,10 +42,42 @@ namespace pryEDBazanI.Clases
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message); 
-                conexion.Close() ;
+                MessageBox.Show(e.Message);
+                conexion.Close();
             }
         }
-        
+        public void Listar(DataGridView Grilla, string varinstruccionSQL)
+        {
+            try
+            { 
+                conexion.ConnectionString = CadenaDeConexion;
+                conexion.Open();
+
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = varinstruccionSQL;
+
+                adaptador = new OleDbDataAdapter(comando);
+                DataSet ds = new DataSet();
+                adaptador.Fill(ds, "Resultado");
+
+                Grilla.DataSource = null;
+                Grilla.DataSource = ds.Tables["Resultado"];
+
+                conexion.Close();
+            }
+
+
+
+
+
+
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                conexion.Close();
+            }
+
+        }
     }
 }
