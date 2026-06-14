@@ -15,8 +15,8 @@ namespace pryEDBazanI.Clases
         private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
 
-        private string CadenaDeConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= Libreria.mdb";
-        private string CadenaDeConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source= Libreria.mdb";
+        private string CadenaDeConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
+        private string CadenaDeConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
 
         public void Listar(string tabla, DataGridView Grilla)
         {

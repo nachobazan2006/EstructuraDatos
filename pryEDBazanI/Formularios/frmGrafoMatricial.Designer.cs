@@ -106,6 +106,7 @@ namespace pryEDBazanI.Formularios
             this.btnBorrarTodo.TabIndex = 7;
             this.btnBorrarTodo.Text = "Borrar Todo";
             this.btnBorrarTodo.UseVisualStyleBackColor = true;
+            this.btnBorrarTodo.Click += new System.EventHandler(this.btnBorrarTodo_Click);
             // 
             // btnCargar
             // 
@@ -115,6 +116,7 @@ namespace pryEDBazanI.Formularios
             this.btnCargar.TabIndex = 6;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // txtPrecioCarga
             // 
@@ -205,6 +207,7 @@ namespace pryEDBazanI.Formularios
             this.btnBorrarConsulta.TabIndex = 7;
             this.btnBorrarConsulta.Text = "Borrar";
             this.btnBorrarConsulta.UseVisualStyleBackColor = true;
+            this.btnBorrarConsulta.Click += new System.EventHandler(this.btnBorrarConsulta_Click);
             // 
             // btnConsultar
             // 
@@ -214,6 +217,7 @@ namespace pryEDBazanI.Formularios
             this.btnConsultar.TabIndex = 6;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // txtPrecioConsulta
             // 
@@ -298,6 +302,7 @@ namespace pryEDBazanI.Formularios
             // 
             // dgvMatriz
             // 
+            this.dgvMatriz.AllowUserToAddRows = false;
             this.dgvMatriz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMatriz.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colOrigen,
@@ -371,6 +376,7 @@ namespace pryEDBazanI.Formularios
             this.btnVerTodos.TabIndex = 6;
             this.btnVerTodos.Text = "Ver todos los viajes";
             this.btnVerTodos.UseVisualStyleBackColor = true;
+            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
             // 
             // btnListarOrigenes
             // 
@@ -380,6 +386,7 @@ namespace pryEDBazanI.Formularios
             this.btnListarOrigenes.TabIndex = 5;
             this.btnListarOrigenes.Text = "Listar Orígenes";
             this.btnListarOrigenes.UseVisualStyleBackColor = true;
+            this.btnListarOrigenes.Click += new System.EventHandler(this.btnListarOrigenes_Click);
             // 
             // cmbHasta
             // 
@@ -413,6 +420,7 @@ namespace pryEDBazanI.Formularios
             this.btnListarDestinos.TabIndex = 2;
             this.btnListarDestinos.Text = "Listar Destinos";
             this.btnListarDestinos.UseVisualStyleBackColor = true;
+            this.btnListarDestinos.Click += new System.EventHandler(this.btnListarDestinos_Click);
             // 
             // cmbDesde
             // 

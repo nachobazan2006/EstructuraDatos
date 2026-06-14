@@ -114,6 +114,24 @@ namespace pryEDBazanI
             COM.ShowDialog();
         }
 
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaSimple COM = new ListaSimple();
+            COM.ShowDialog();
+        }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbol COM = new frmArbol();
+            COM.ShowDialog();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGrafoMatricial COM = new frmGrafoMatricial();
+            COM.ShowDialog();
+        }
+
         private void operacionesEnBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmOperaciones COM = new frmOperaciones();

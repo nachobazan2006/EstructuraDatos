@@ -259,5 +259,10 @@
   <ItemGroup>
     <None Include="Resources\sss.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libreria.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

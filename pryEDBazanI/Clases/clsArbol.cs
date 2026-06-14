@@ -13,7 +13,7 @@ namespace pryEDBazanI.Clases
 
         public void Agregar(clsNodo Nvo) 
         {
-            if (Nvo == null)
+            if (Raiz == null)
             {
                 Raiz = Nvo;
             }
@@ -41,7 +41,11 @@ namespace pryEDBazanI.Clases
         public void Recorrer(DataGridView Grilla) 
         {
             Grilla.Rows.Clear();
-            InOrderAsc(Grilla, Raiz);
+
+            if (Raiz != null)
+            {
+                InOrderAsc(Grilla, Raiz);
+            }
 
         }   
         public void InOrderAsc(DataGridView Dgv, clsNodo R) 
