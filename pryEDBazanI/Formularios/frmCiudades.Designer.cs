@@ -37,9 +37,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 41);
+            this.label1.Location = new System.Drawing.Point(29, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(124, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese una ciudad:";
             // 
@@ -57,15 +57,16 @@
             // 
             this.txtCiudad.Location = new System.Drawing.Point(172, 41);
             this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(100, 20);
+            this.txtCiudad.Size = new System.Drawing.Size(100, 22);
             this.txtCiudad.TabIndex = 2;
             // 
             // lstCiudades
             // 
             this.lstCiudades.FormattingEnabled = true;
+            this.lstCiudades.ItemHeight = 16;
             this.lstCiudades.Location = new System.Drawing.Point(12, 113);
             this.lstCiudades.Name = "lstCiudades";
-            this.lstCiudades.Size = new System.Drawing.Size(260, 95);
+            this.lstCiudades.Size = new System.Drawing.Size(260, 84);
             this.lstCiudades.TabIndex = 3;
             // 
             // frmCiudades

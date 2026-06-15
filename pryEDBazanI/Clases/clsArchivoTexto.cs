@@ -52,6 +52,12 @@ namespace pryEDBazanI
         {
             string DatoLeido;
             lst.Items.Clear();
+
+            if (File.Exists(NomArchi) == false)
+            {
+                return;
+            }
+
             StreamReader AD = new StreamReader(NomArchi);
             DatoLeido = AD.ReadLine();
             while (DatoLeido != null)
@@ -60,7 +66,11 @@ namespace pryEDBazanI
                 DatoLeido =AD.ReadLine();
             }
             AD.Close();
-            lst.SelectedIndex = 0;
+
+            if (lst.Items.Count > 0)
+            {
+                lst.SelectedIndex = 0;
+            }
         }
         public void Recorrer(ListBox lst)
         {

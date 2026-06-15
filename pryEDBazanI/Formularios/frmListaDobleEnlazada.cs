@@ -49,9 +49,17 @@ namespace pryEDBazanI
                 fila.RecorrerDesc(lstEnlazada);
                 fila.RecorrerDesc(cmbElementoEliminado);
             }
+            else if (rbAscendente.Checked == true)
+            {
+                fila.RecorrerAsc(dgvEnlazada);
+                fila.RecorrerAsc(lstEnlazada);
+                fila.RecorrerAsc(cmbElementoEliminado);
+            }
             else
             {
-                MessageBox.Show("Seleccione Descendente para listar la lista doble.", "Lista doble", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                fila.RecorrerAsc(dgvEnlazada);
+                fila.RecorrerAsc(lstEnlazada);
+                fila.RecorrerAsc(cmbElementoEliminado);
             }
 
             txtCodigo.Text = "";
@@ -66,9 +74,18 @@ namespace pryEDBazanI
                 if (cmbElementoEliminado.Text != "")
                 {
                     fila.Eliminar(Convert.ToInt32(cmbElementoEliminado.Text));
-                    fila.RecorrerDesc(dgvEnlazada);
-                    fila.RecorrerDesc(lstEnlazada);
-                    fila.RecorrerDesc(cmbElementoEliminado);
+                    if (rbDescendente.Checked == true)
+                    {
+                        fila.RecorrerDesc(dgvEnlazada);
+                        fila.RecorrerDesc(lstEnlazada);
+                        fila.RecorrerDesc(cmbElementoEliminado);
+                    }
+                    else
+                    {
+                        fila.RecorrerAsc(dgvEnlazada);
+                        fila.RecorrerAsc(lstEnlazada);
+                        fila.RecorrerAsc(cmbElementoEliminado);
+                    }
                     cmbElementoEliminado.Text = "";
                 }
                 else

@@ -153,5 +153,43 @@ namespace pryEDBazanI.Clases
 
 
         }
+        public void RecorrerAsc(DataGridView Grilla)
+        {
+            clsNodo aux = primero;
+
+            if (Grilla.Columns.Count == 0)
+            {
+                Grilla.Columns.Add("Codigo", "Codigo");
+                Grilla.Columns.Add("Nombre", "Nombre");
+                Grilla.Columns.Add("Tramite", "Tramite");
+            }
+
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
+        public void RecorrerAsc(ListBox Lista)
+        {
+            clsNodo aux = primero;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo);
+                aux = aux.Siguiente;
+            }
+        }
+        public void RecorrerAsc(ComboBox combo)
+        {
+            clsNodo aux = primero;
+            combo.Items.Clear();
+            while (aux != null)
+            {
+                combo.Items.Add(aux.Codigo);
+                aux = aux.Siguiente;
+            }
+        }
     }
 }

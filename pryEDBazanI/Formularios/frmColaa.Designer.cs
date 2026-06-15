@@ -51,11 +51,14 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.picCola = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCola)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCola
@@ -268,13 +271,25 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.picCola);
             this.groupBox4.Location = new System.Drawing.Point(18, 25);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(203, 187);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Cola";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // picCola
+            // 
+            this.picCola.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCola.ImageLocation = "Resources\\cola.png";
+            this.picCola.Location = new System.Drawing.Point(3, 16);
+            this.picCola.Name = "picCola";
+            this.picCola.Size = new System.Drawing.Size(197, 168);
+            this.picCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCola.TabIndex = 0;
+            this.picCola.TabStop = false;
             // 
             // label1
             // 
@@ -304,6 +319,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCola)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +351,6 @@
         private System.Windows.Forms.Label lblTramiteEliminado;
         private System.Windows.Forms.Label lblCodigoEliminado;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picCola;
     }
 }

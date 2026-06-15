@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.picPila = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvCola = new System.Windows.Forms.DataGridView();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +52,8 @@
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPila)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -59,12 +62,24 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.picPila);
             this.groupBox4.Location = new System.Drawing.Point(86, 23);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(203, 187);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Pila";
+            // 
+            // picPila
+            // 
+            this.picPila.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picPila.ImageLocation = "Resources\\pila.png";
+            this.picPila.Location = new System.Drawing.Point(3, 16);
+            this.picPila.Name = "picPila";
+            this.picPila.Size = new System.Drawing.Size(197, 168);
+            this.picPila.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPila.TabIndex = 0;
+            this.picPila.TabStop = false;
             // 
             // groupBox3
             // 
@@ -277,6 +292,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmPila";
             this.Text = "frmPila";
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picPila)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -290,6 +307,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.PictureBox picPila;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgvCola;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;

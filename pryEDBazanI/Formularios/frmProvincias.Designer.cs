@@ -37,46 +37,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 58);
+            this.label1.Location = new System.Drawing.Point(57, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(138, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese una provincia:";
             // 
             // txtProvincia
             // 
-            this.txtProvincia.Location = new System.Drawing.Point(161, 51);
+            this.txtProvincia.Location = new System.Drawing.Point(215, 63);
+            this.txtProvincia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(148, 20);
+            this.txtProvincia.Size = new System.Drawing.Size(196, 22);
             this.txtProvincia.TabIndex = 1;
             // 
             // lstProvincias
             // 
             this.lstProvincias.FormattingEnabled = true;
-            this.lstProvincias.Location = new System.Drawing.Point(46, 124);
+            this.lstProvincias.ItemHeight = 16;
+            this.lstProvincias.Location = new System.Drawing.Point(61, 153);
+            this.lstProvincias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstProvincias.Name = "lstProvincias";
-            this.lstProvincias.Size = new System.Drawing.Size(263, 95);
+            this.lstProvincias.Size = new System.Drawing.Size(349, 116);
             this.lstProvincias.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(234, 89);
+            this.button1.Location = new System.Drawing.Point(312, 110);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 3;
-            this.button1.Text = "btnAgregar";
+            this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmProvincias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 258);
+            this.ClientSize = new System.Drawing.Size(553, 318);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lstProvincias);
             this.Controls.Add(this.txtProvincia);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmProvincias";
             this.Text = "frmProvincias";
             this.Load += new System.EventHandler(this.frmProvincias_Load);
